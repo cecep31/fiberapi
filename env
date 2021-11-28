@@ -1,0 +1,5 @@
+DB_HOST = 172.0.0.1
+DB_PORT = 3306
+DB_NAME = fiberapi
+DB_USER = pilput
+DB_PASS = 
