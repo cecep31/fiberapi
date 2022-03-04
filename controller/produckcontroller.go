@@ -24,7 +24,7 @@ func (controller *ProduckController) Route(app *fiber.App) {
 func (controller *ProduckController) Create(c *fiber.Ctx) error {
 	var request model.CreateProduckRequest
 	err := c.BodyParser(&request)
-	request.Id = uuid.New().String()
+	request.Uuid = uuid.New().String()
 	exception.PanicIfNeeded(err)
 
 	response := controller.ProduckService.Create(request)

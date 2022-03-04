@@ -1,22 +1,33 @@
 package model
 
+import "time"
+
 type CreateProduckRequest struct {
-	Id       string `json:"id"`
-	Name     string `json:"name"`
-	Price    int64  `json:"price"`
-	Quantity int32  `json:"quantity"`
+	ID        int64     `json:"id"`
+	Uuid      string    `json:"uuid"`
+	Name      string    `json:"name"`
+	Price     int64     `json:"price"`
+	Quantity  int32     `json:"quantity"`
+	CreatedAt time.Time `json:"created_at"`
+	UpdatedAt time.Time `json:"updated_at"`
 }
 
 type CreateProductResponse struct {
-	Id       string `json:"id"`
-	Name     string `json:"name"`
-	Price    int64  `json:"price"`
-	Quantity int32  `json:"quantity"`
+	ID        int64     `json:"id"`
+	Uuid      string    `json:"uuid"`
+	Name      string    `json:"name"`
+	Price     int64     `json:"price"`
+	Quantity  int32     `json:"quantity"`
+	CreatedAt time.Time `json:"created_at"`
+	UpdatedAt time.Time `json:"updated_at"`
 }
 
 type GetProductResponse struct {
-	Id       string `json:"id"`
-	Name     string `json:"name"`
-	Price    int64  `json:"price"`
-	Quantity int32  `json:"quantity"`
+	ID        int64     `json:"id"`
+	Uuid      string    `json:"uuid"`
+	Name      string    `json:"name"`
+	Price     int64     `json:"price"`
+	Quantity  int32     `json:"quantity"`
+	CreatedAt time.Time `json:"created_at"`
+	UpdatedAt time.Time `json:"updated_at"`
 }
