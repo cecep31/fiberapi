@@ -1,5 +1,5 @@
 run:
 	@go build -o bin
-	@./fiberapi
+	@./bin/fiberapi
 build:
 	@go build -o bin
